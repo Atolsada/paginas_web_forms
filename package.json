@@ -4,10 +4,11 @@
   "description": "Ejercicio de CSS. unidad 3 del módulo 1",
   "main": "index.js",
   "scripts": {
-    "start": "parallelshell \"npm run server\" \"npm run pug\"",
+    "start": "parallelshell \"npm run srv\" \"npm run pug:w\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pug": "pug -w -P ./06_Pug/src -o ./06_Pug/dist",
-    "server": "http-server"
+    "pug": "pug -P -O ./06_Pug/config.json ./06_Pug/src -o ./06_Pug/dist",
+    "pug:w": "pug -w -P -O ./06_Pug/config.json ./06_Pug/src -o ./06_Pug/dist",
+    "srv": "http-server"
   },
   "repository": {
     "type": "git",
