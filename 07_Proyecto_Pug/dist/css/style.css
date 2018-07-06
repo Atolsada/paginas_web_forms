@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 nav ul {
@@ -12,5 +13,7 @@ body {
   background-color: bisque; }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%; }
